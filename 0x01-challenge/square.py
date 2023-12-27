@@ -9,6 +9,7 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ Init method """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -21,6 +22,7 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ Method toString of the square"""
         return "{}/{}".format(self.width, self.height)
 
 
